@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>West India Wildlife Sanctuary</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    body {
+      background-color: #F6EEDF; /* Light beige */
+    }
+    .navbar {
+      background-color: #29b39f; /* Dark gray */
+    }
+    .container-fluid {
+      background-color: #baaae9; /* Light brown */
+      padding-top: 20px;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      color: #4283de; /* Dark blue */
+    }
+    p {
+      color: #000000; /* Dark purple */
+    }
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark">
+  <div class="container">
+    <a class="navbar-brand" href="https://www.facebook.com/watch/?v=695485359071575" >West India Wildlife Sanctuary</a>
+  </div>
+</nav>
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-8">
+      <h2>About</h2>
+      <p>Welcome to the West India Wildlife Sanctuary. information about the Gir Forest Wildlife Sanctuary in West India:
+
+        Gir Forest Wildlife Sanctuary, located in the state of Gujarat, is one of the most renowned wildlife sanctuaries in India. It's particularly famous for being the last abode of the Asiatic Lion (Panthera leo persica), a critically endangered species. .</p>
+      <h3>Image Gallery</h3>
+      <div class="row">
+        <div class="col-md-4">
+          <img src="w1.jpg" alt="Image 1" class="img-fluid rounded" onclick="showImage('w1.jpg')">
+        </div>
+        <div class="col-md-4">
+          <img src="w2.jpg" alt="Image 2" class="img-fluid rounded" onclick="showImage('w2.jpg')">
+        </div>
+        <div class="col-md-4">
+          <img src="w4.jpg" alt="Image 3" class="img-fluid rounded" onclick="showImage('w4.jpg')">
+        </div>
+        <div class="col-md-4">
+          <img src="w5.jpg" alt="Image 3" class="img-fluid rounded" onclick="showImage('w5.jpg')">
+        </div>
+        <div class="col-md-4">
+          <img src="w3.jpg" alt="Image 3" class="img-fluid rounded" onclick="showImage('w3.jpg')">
+        </div>
+      </div>
+      <div id="imageModal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="modalImage">
+      </div>
+    </div>
+    <div class="col-md-4">
+      <h2>Contact Us</h2>
+      <p>Email: thiru@westindiawildlife.com</p>
+      <p>Phone: +91 6357829163</p>
+      <h3>Location</h3>
+      <p>West India Wildlife Sanctuary, <br> Gir forest , India</p>
+    </div>
+  </div>
+</div>
+
+<!-- Bootstrap JS and custom JS -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script>
+  function showImage(imageSrc) {
+    var modal = document.getElementById("imageModal");
+    var modalImg = document.getElementById("modalImage");
+    modal.style.display = "block";
+    modalImg.src = imageSrc;
+  }
+  function closeModal() {
+    var modal = document.getElementById("imageModal");
+    modal.style.display = "none";
+  }
+</script>
+
+</body>
+</html>

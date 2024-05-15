@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>East Wildlife</title>
+    <link rel="stylesheet" href="eastmini.css">
+</head>
+<body>
+    <header>
+        <h1>East Wildlife</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#images">Images</a></li>
+            <li><a href="#videos">Video</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section id="about">
+        <h2>About Us</h2>
+        <p>Welcome to East Wildlife!In the Santuri area of East India, you can find a rich variety of wildlife, each species contributing to the area's biodiversity and ecological balance. Here are some of the prominent animal species found in the wildlife sanctuaries and reserves in the region.
+        Kaziranga National Park is a UNESCO World Heritage Site located in the state of Assam, India. It is renowned for its remarkable biodiversity, particularly for being a stronghold of the endangered Indian one-horned rhinoceros. Here's an overview of Kaziranga National Park</p>
+    </section>
+
+    <section id="images">
+        <h2>Images</h2>
+        <div class="gallery">
+            <img src="e1.jpg" alt="Wildlife Image 1">
+            <img src="e2.jpg" alt="Wildlife Image 2">
+            <img src="e3.jpg" alt="Wildlife Image 3">
+            <img src="e4.jpg" alt="Wildlife Image 4">
+            <img src="n3.jpg" alt="Wildlife Image 5">
+            <img src="e6.jpg" alt="Wildlife Image 6">
+        </div>
+    </section>
+
+    <section id="videos">
+        <h2>Videos</h2>
+        <div class="video-container">
+
+            <iframe width="780" height="438" src="https://www.youtube.com/embed/8cHFGVZPz1o" title="Kaziranga National Park (India) / TBS" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>If you have any questions or inquiries, feel free to reach out to us:</p>
+        <form action="submit_contact_form.php" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 East Wildlife. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

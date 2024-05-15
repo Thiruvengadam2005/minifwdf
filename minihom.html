@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wield Life Santure</title>
+  
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  
+  <style>
+    body {
+      background-color: #fcfff9;
+    }
+    .jumbotron {
+      background-color: #3a6ee7;
+      color: #f3e7a4;
+    }
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" href="#">Wield Life Santure</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#" onclick="scrollToSection('home')">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#" onclick="scrollToSection('about')">About</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#" onclick="scrollToSection('services')">Services</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#" onclick="scrollToSection('contact')">Contact</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<div class="container mt-4">
+  <div class="jumbotron">
+    <h1 class="display-4">Welcome to Wield Life Santure!</h1>
+    <p class="lead">We offer a variety of services to help you live your best life.</p>
+    <hr class="my-4">
+    <p>Explore our website to learn more about what we can do for you.</p>
+    <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+  </div>
+
+  <div class="row">
+    <div class="col-lg-6">
+      <h2 id="about">About Us</h2>
+      <p>
+        Welcome to Wield Life Santure! We are dedicated to providing high-quality services to help you live a healthier and happier life. Our team consists of experienced professionals who are passionate about helping individuals achieve their wellness goals.
+        At Wield Life Santure, we offer a range of services including fitness training, nutrition counseling more. Whether you're looking to improve your physical fitnessyour overall well-being, we're here to support you every step of the way.
+        Our mission is to empower individuals to take control of their health and wellness by providing them with the knowledge, tools, and support they need to succeed. We believe that everyone deserves to live a life full of vitality, energy, and joy, and we're committed to helping you achieve that.
+      </p>
+    </div>
+    <div class="col-lg-6">
+      <img src="wildlogo.jpg" alt="About Us" class="img-fluid">
+    </div>
+  </div>
+  
+  <div class="row mt-4">
+    <div class="col-lg-4">
+      
+      
+      <h2 id="services">Our Services</h2>
+      <ul>
+        <li><a href="southmimi.html" onclick="scrollToSection('southIndia')">South India Sanctuaries</a></li>
+        <li><a href="northmini.html" onclick="scrollToSection('northIndia')">North India Sanctuaries</a></li>
+        <li><a href="eastmini.html" onclick="scrollToSection('eastIndia')">East India Sanctuaries</a></li>
+        <li><a href="westmini.html" onclick="scrollToSection('westIndia')">West India Sanctuaries</a></li>
+      </ul>
+    </div>
+    <div class="col-lg-4">
+      <h2 id="southIndia">South India wildlife Sanctuaries</h2>
+      
+    </div>
+    <div class="col-lg-4">
+      <h2 id="northIndia">North India wildelife Sanctuaries</h2>
+      
+    </div>
+  </div>
+
+  <div class="row mt-4">
+    <div class="col-lg-4">
+      <h2 id="eastIndia">East India wildlife Sanctuaries</h2>
+      
+    </div>
+    <div class="col-lg-4">
+      <h2 id="westIndia">West India wildlife  Sanctuaries</h2>
+      
+    </div>
+    
+    <img src="wildlogo2.jpg"alt="services">
+    <img src="news.jpg" alt="services" height="500px" width="300px">
+  </div>
+
+  <div class="row mt-4">
+    <div class="col">
+      <h2 id="contact">Contact Us</h2>
+      <p>If you have any questions or inquiries, feel free to contact us.</p>
+      <form>
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" class="form-control" id="name" placeholder="Enter your name">
+        </div>
+        <div class="form-group">
+          <label for="email">Email address</label>
+          <input type="email" class="form-control" id="email" placeholder="Enter your email">
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea class="form-control" id="message" rows="3" placeholder="Enter your message"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+    </div>
+  </div>
+</div>
+
+<script>
+  function scrollToSection(sectionId) {
+    var section = document.getElementById(sectionId);
+    if (sectionId === 'home') {
+      window.scrollTo({ top: 5, behavior: 'smooth' });
+    } else {
+      section.scrollIntoView({ behavior: 'smooth' });
+    }
+  }
+</script>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
